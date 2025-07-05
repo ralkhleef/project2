@@ -1,0 +1,28 @@
+Diagnostics:
+  ClangTidy:
+    Add: [core*,
+          modernize*, 
+          bugprone*, 
+          cppcoreguidelines*, 
+          google*, 
+          performance*, 
+          misc*, 
+          readability*, 
+          clang-analyzer-security*,
+          clang-analyzer-core*,
+          clang-analyzer-cplusplus*,
+          clang-analyzer-deadcode*,
+          clang-analyzer-optin.cplusplus*,
+          clang-analyzer-optin.core*]
+    CheckOptions:
+          misc-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic: 1
+    Remove: [modernize-use-trailing-return-type,
+             google-readability-todo,
+             bugprone-easily-swappable-parameters,
+             modernize-use-equals-default,
+             cppcoreguidelines-owning-memory,
+             cppcoreguidelines-avoid-do-while,
+             readability-use-anyofallof,
+             google-objc*,
+             misc-no-recursion]
+  UnusedIncludes: Strict
