@@ -1,4 +1,4 @@
-# project1
+# Project 2
 
 
 ## Getting started
